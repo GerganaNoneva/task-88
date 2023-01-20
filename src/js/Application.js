@@ -14,6 +14,7 @@ export default class Application extends EventEmitter {
   }
   
   init() {
+    document.querySelector('article').addEventListener('click', ()=>{
     anime({
       targets: 'p',
       translateX: 250,
@@ -21,6 +22,7 @@ export default class Application extends EventEmitter {
       loop: true,
       easing: 'spring(1, 80, 10, 0)'
     });
+  })
   }
 }
 
