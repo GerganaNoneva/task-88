@@ -12,6 +12,7 @@ export default class Application extends EventEmitter {
     this.init();
     this.emit(Application.events.READY);
   }
+  
   init() {
     anime({
       targets: 'p',
